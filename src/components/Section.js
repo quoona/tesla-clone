@@ -1,21 +1,26 @@
 import React from "react";
 import styled from "styled-components";
+//animation fade form react reveal
+import Fade from "react-reveal/Fade";
 function Section(props) {
   return (
     <Wrap bgImage={props.backgroundImg}>
-      <ItemText>
-        <h1>{props.title}</h1>
-        <p>{props.decription}</p>
-      </ItemText>
+      <Fade bottom>
+        <ItemText>
+          <h1>{props.title}</h1>
+          <p>{props.decription}</p>
+        </ItemText>
+      </Fade>
 
       <Buttons>
-        <ButtonGroup>
-          <LeftButton>{props.leftBtnText}</LeftButton>
-          {props.rightBtnText && (
-            <RightButton>{props.rightBtnText}</RightButton>
-          )}
-        </ButtonGroup>
-
+        <Fade bottom>
+          <ButtonGroup>
+            <LeftButton>{props.leftBtnText}</LeftButton>
+            {props.rightBtnText && (
+              <RightButton>{props.rightBtnText}</RightButton>
+            )}
+          </ButtonGroup>
+        </Fade>
         <DownArrow src="./images/down-arrow.svg"></DownArrow>
       </Buttons>
     </Wrap>
