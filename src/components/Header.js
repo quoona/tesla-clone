@@ -133,6 +133,12 @@ const BurgerNav = styled.div`
 
     a {
       font-weight: 600;
+      padding: 7px;
+      display: block;
+    }
+    a:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 6px;
     }
   }
 `;

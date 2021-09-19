@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Slide from "react-reveal/Slide";
 //animation fade form react reveal
 import Fade from "react-reveal/Fade";
 function Section(props) {
@@ -13,14 +14,17 @@ function Section(props) {
       </Fade>
 
       <Buttons>
-        <Fade bottom>
-          <ButtonGroup>
+        <ButtonGroup>
+          <Slide left>
             <LeftButton>{props.leftBtnText}</LeftButton>
+          </Slide>
+          <Slide right>
             {props.rightBtnText && (
               <RightButton>{props.rightBtnText}</RightButton>
             )}
-          </ButtonGroup>
-        </Fade>
+          </Slide>
+        </ButtonGroup>
+
         <DownArrow src="./images/down-arrow.svg"></DownArrow>
       </Buttons>
     </Wrap>
