@@ -117,7 +117,7 @@ const BurgerNav = styled.div`
   top: 0;
   bottom: 0;
   right: 0;
-  width: 300px;
+  width: 250px;
   background-color: white;
   z-index: 10;
   list-style: none;
@@ -138,7 +138,7 @@ const BurgerNav = styled.div`
     }
     a:hover {
       background-color: rgba(0, 0, 0, 0.2);
-      border-radius: 6px;
+      border-radius: 8px;
     }
   }
 `;
